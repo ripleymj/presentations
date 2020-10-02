@@ -28,7 +28,6 @@ jobs:
           npm install --save-dev @marp-team/marp-cli
       - name: Build PDFs
         run: |
-          mkdir ~/output
           for input in `grep -l 'marp: true' *.md */*.md`
           do
             output=`echo -n $input | sed -e 's/.md$//g'`
@@ -44,5 +43,5 @@ jobs:
       - name: Create updated release
         run: |
           gh release delete presentation-latest -y || true
-          git push --delete origin presentation-latest
+          git push --delete origin presentation-latest || true
           gh release create presentation-latest PDF.zip
