@@ -38,7 +38,7 @@ jobs:
       - name: Zip PDFs
         run: |
           find . -name "*pdf" -exec zip -g PDF.zip {} \;
-      - name: Login to GitHub API
+      - name: Set GitHub auth token
         run: |
           gh config set -h github.com oauth_token "${{ secrets.GITHUB_TOKEN }}"
       - name: Create updated release
