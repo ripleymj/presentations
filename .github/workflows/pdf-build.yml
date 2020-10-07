@@ -1,7 +1,9 @@
 ---
 name: Build PDF Release
 on:
-  pull_request:
+  push:
+    branches:
+      - main
 jobs:
   Build:
     name: Build PDF release bundle
