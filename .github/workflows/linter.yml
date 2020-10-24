@@ -1,0 +1,21 @@
+---
+name: Lint Presentations
+
+on:
+  pull_request
+
+jobs:
+  build:
+    name: Lint Presentations
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v2
+
+      - name: Lint Presentations
+        uses: github/super-linter@v3
+        env:
+          VALIDATE_MARKDOWN: true
+          DEFAULT_BRANCH: main
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
