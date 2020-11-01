@@ -12,10 +12,13 @@ jobs:
     steps:
       - name: Checkout Code
         uses: actions/checkout@v2
-
-      - name: Lint Presentations
-        uses: github/super-linter@v3
-        env:
-          VALIDATE_MARKDOWN: true
-          DEFAULT_BRANCH: main
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Install node
+        uses: actions/setup-node@v2-beta
+        with:
+          node-version: '12'
+      - name: Install markdownlint
+        run: |
+          npm --save-dev install markdownlint markdownlint-cli
+      - name: Lint markdown files
+        run: |
+          npx markdownlint *md */*.md
