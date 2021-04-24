@@ -20,6 +20,7 @@ jobs:
         run: |
           sudo apt-get update
           sudo snap install chromium
+          sudo apt-get -y install pandoc texlive-xetex
       - uses: actions/cache@v2
         with:
           path: ~/.npm
@@ -28,7 +29,7 @@ jobs:
             "${{ runner.os }}-node-"
       - name: Install marp
         run: |
-          npm install --save-dev @marp-team/marp-cli markdown-pdf
+          npm install --save-dev @marp-team/marp-cli
       - name: Build PDFs
         run: |
           for input in *.md */*.md; do
@@ -37,7 +38,8 @@ jobs:
             if [[ "$(grep -l 'marp: true' "$input")" ]]; then
               npx marp --allow-local-files "$input" -o "$output"
             else
-              npx markdown-pdf "$input" -o "$output"
+              directory=$(dirname "$input")
+              pandoc --pdf-engine=xelatex --resource-path .:"$directory" -o "$output" "$input"
             fi
             zip -g PDF.zip "$output"
           done
