@@ -8,18 +8,18 @@ jobs:
   Build:
     if: github.repository == 'jmunixusers/presentations'
     name: Build PDF release bundle
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@master
       - name: Setup node
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v2
         with:
-          node-version: '12'
+          node-version: '14'
       - name: Install Ubuntu dependencies
         run: |
           sudo apt-get update
-          sudo apt-get -y install chromium-browser
+          sudo snap install chromium
       - uses: actions/cache@v2
         with:
           path: ~/.npm
