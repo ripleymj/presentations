@@ -1,0 +1,32 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: argocd-cm
+  namespace: argocd
+  labels:
+    app.kubernetes.io/name: argocd-cm
+    app.kubernetes.io/part-of: argocd
+data:
+  # add an additional local user with apiKey and login capabilities
+  #   apiKey - allows generating API keys
+  #   login - allows to login using UI
+  accounts.uuguser1: login
+  accounts.uuguser2: login
+  accounts.uuguser3: login
+  accounts.uuguser4: login
+  accounts.uuguser5: login
+  accounts.uuguser6: login
+  accounts.uuguser7: login
+  accounts.uuguser8: login
+  accounts.uuguser9: login
+  accounts.uuguser10: login
+  accounts.uuguser11: login
+  accounts.uuguser12: login
+  accounts.uuguser13: login
+  accounts.uuguser14: login
+  accounts.uuguser15: login
+  accounts.uuguser16: login
+  accounts.uuguser17: login
+  accounts.uuguser18: login
+  accounts.uuguser19: login
+  accounts.uuguser20: login
