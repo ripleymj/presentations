@@ -1,0 +1,78 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  annotations:
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"v1","kind":"ConfigMap","metadata":{"annotations":{},"creationTimestamp":"2022-04-11T19:49:37Z","labels":{"app.kubernetes.io/name":"argocd-rbac-cm","app.kubernetes.io/part-of":"argocd"},"name":"argocd-rbac-cm","namespace":"argocd","resourceVersion":"163880","uid":"abd2a1d5-b49f-4d89-8079-b62a10fe8f9d"}}
+  creationTimestamp: "2022-04-11T19:49:37Z"
+  labels:
+    app.kubernetes.io/name: argocd-rbac-cm
+    app.kubernetes.io/part-of: argocd
+  name: argocd-rbac-cm
+  namespace: argocd
+  resourceVersion: "164189"
+  uid: abd2a1d5-b49f-4d89-8079-b62a10fe8f9d
+data:
+  policy.default: role:readonly
+  scopes: "[accounts]"
+  policy.csv: |
+    p, uuguser1, applications, *, uuguser1/*, allow
+    p, uuguser1, repositories, *, uuguser1/*, allow
+    p, uuguser2, applications, *, uuguser2/*, allow
+    p, uuguser2, repositories, *, uuguser2/*, allow
+    p, uuguser3, applications, *, uuguser3/*, allow
+    p, uuguser3, repositories, *, uuguser3/*, allow
+    p, uuguser4, applications, *, uuguser4/*, allow
+    p, uuguser4, repositories, *, uuguser4/*, allow
+    p, uuguser5, applications, *, uuguser5/*, allow
+    p, uuguser5, repositories, *, uuguser5/*, allow
+    p, uuguser6, applications, *, uuguser6/*, allow
+    p, uuguser6, repositories, *, uuguser6/*, allow
+    p, uuguser7, applications, *, uuguser7/*, allow
+    p, uuguser7, repositories, *, uuguser7/*, allow
+    p, uuguser8, applications, *, uuguser8/*, allow
+    p, uuguser8, repositories, *, uuguser8/*, allow
+    p, uuguser9, applications, *, uuguser9/*, allow
+    p, uuguser9, repositories, *, uuguser9/*, allow
+    p, uuguser10, applications, *, uuguser10/*, allow
+    p, uuguser10, repositories, *, uuguser10/*, allow
+    p, uuguser11, applications, *, uuguser11/*, allow
+    p, uuguser11, repositories, *, uuguser11/*, allow
+    p, uuguser12, applications, *, uuguser12/*, allow
+    p, uuguser12, repositories, *, uuguser12/*, allow
+    p, uuguser13, applications, *, uuguser13/*, allow
+    p, uuguser13, repositories, *, uuguser13/*, allow
+    p, uuguser14, applications, *, uuguser14/*, allow
+    p, uuguser14, repositories, *, uuguser14/*, allow
+    p, uuguser15, applications, *, uuguser15/*, allow
+    p, uuguser15, repositories, *, uuguser15/*, allow
+    p, uuguser16, applications, *, uuguser16/*, allow
+    p, uuguser16, repositories, *, uuguser16/*, allow
+    p, uuguser17, applications, *, uuguser17/*, allow
+    p, uuguser17, repositories, *, uuguser17/*, allow
+    p, uuguser18, applications, *, uuguser18/*, allow
+    p, uuguser18, repositories, *, uuguser18/*, allow
+    p, uuguser19, applications, *, uuguser19/*, allow
+    p, uuguser19, repositories, *, uuguser19/*, allow
+    p, uuguser20, applications, *, uuguser20/*, allow
+    p, uuguser20, repositories, *, uuguser20/*, allow
+    p, uuguser21, applications, *, uuguser21/*, allow
+    p, uuguser21, repositories, *, uuguser21/*, allow
+    p, uuguser22, applications, *, uuguser22/*, allow
+    p, uuguser22, repositories, *, uuguser22/*, allow
+    p, uuguser23, applications, *, uuguser23/*, allow
+    p, uuguser23, repositories, *, uuguser23/*, allow
+    p, uuguser24, applications, *, uuguser24/*, allow
+    p, uuguser24, repositories, *, uuguser24/*, allow
+    p, uuguser25, applications, *, uuguser25/*, allow
+    p, uuguser25, repositories, *, uuguser25/*, allow
+    p, uuguser26, applications, *, uuguser26/*, allow
+    p, uuguser26, repositories, *, uuguser26/*, allow
+    p, uuguser27, applications, *, uuguser27/*, allow
+    p, uuguser27, repositories, *, uuguser27/*, allow
+    p, uuguser28, applications, *, uuguser28/*, allow
+    p, uuguser28, repositories, *, uuguser28/*, allow
+    p, uuguser29, applications, *, uuguser29/*, allow
+    p, uuguser29, repositories, *, uuguser29/*, allow
+    p, uuguser30, applications, *, uuguser30/*, allow
+    p, uuguser30, repositories, *, uuguser30/*, allow
