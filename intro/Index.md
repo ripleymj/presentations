@@ -8,10 +8,11 @@ Mike Ripley
 ---
 # About the UUG
 
-- Find us on Discord: https://discord.gg/CJSZ2Pqs
+- Meetings Wednesdays at 6:30 in King 236, casual Festival dinner around 5:30
+- Find us on Discord: <https://discord.gg/CJSZ2Pqs>
 - Listserv for meeting announcements
-- GitHub org: https://github.com/jmunixusers
-- Other fun: https://www.jmunixusers.org
+- GitHub org: <https://github.com/jmunixusers>
+- Other fun: <https://www.jmunixusers.org>
 
 ---
 # About "Linux"
@@ -28,10 +29,15 @@ Mike Ripley
   - Debian / Ubuntu
   - RedHat / Fedora
   - Arch
-- Sometimes the variants are famous in their own right: Mint, CentOS, Kali, and sometimes they're very minor changes
+- Sometimes the variants are famous in their own right: Mint, CentOS, Kali
+- Sometimes they're very minor changes
 
 ---
 # About desktop environments
+
+- One of the biggest changes you'll see between distros is their default window manager and desktop environment
+- Popular choices include: Gnome, KDE, Cinnamon, XFCE, and i3/Sway
+- Big distros package multiple WM/DE - you do not need to reinstall to switch, just install the packages
 
 ---
 # About licensing
@@ -58,10 +64,22 @@ Mike Ripley
 - Pick a distro you'd like to try. Stay with a major one like Ubuntu or Fedora, since they'll be better tested and documented
 - Absolutely try others later, once you've learned some basics and know what differences you want
 - Download an ISO file
+- Decide if you want to use a virtual machine, spare computer, or dual-boot
 
 ---
 # About virtual machines
 
+- A virtual machine allows you to create an isolated mini computer inside your regular system
+- Popular options include: VirtualBox, VMware, and Parallels
+- You can create multiple machines, and start/stop them as needed
+- Small performance penalty for faking real hardware
+- Beware, can use a significant percentage of your CPU, RAM, and disk
 
 ---
-# CLI Intro
+# About other options
+
+- Spare old laptops are easy and cheap
+- Repartitioning and dual-booting is risky and interrupts your other work, but allows you to run at full speed
+- CS labs & stu server available to experiment
+- WSL & Mac Terminal offer many of the same utilities
+- Cloud free tier
