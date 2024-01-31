@@ -31,6 +31,9 @@ Mike Ripley
 - Sometimes the variants are famous in their own right: Mint, CentOS, Kali, and sometimes they're very minor changes
 
 ---
+# About desktop environments
+
+---
 # About licensing
 
 - Common to all of this is a belief that software's source code should be available to users to observe and modify
@@ -51,3 +54,14 @@ Mike Ripley
 
 ---
 # About getting started
+
+- Pick a distro you'd like to try. Stay with a major one like Ubuntu or Fedora, since they'll be better tested and documented
+- Absolutely try others later, once you've learned some basics and know what differences you want
+- Download an ISO file
+
+---
+# About virtual machines
+
+
+---
+# CLI Intro
