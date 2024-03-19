@@ -4,6 +4,12 @@ marp: true
 ---
 # Databases
 
+- Tonight's agenda:
+  - History/overview
+  - Analytic functions
+  - JSON duality
+  - Query planning and optimization
+
 ---
 # A brief history
 
@@ -174,4 +180,32 @@ ORDER BY country_name, state_province;
 [oracle-base](https://oracle-base.com/articles/misc/analytic-functions)
 
 ---
+# JSON duality
+
+- As a response to the document/NoSQL database movement, the relational world has responded with hybrid databases
+- JSON data types allow clients to put/get JSON documents, much like document DBs
+- JSON functions/schema allow JSON data to be ingested into part of the regular query engine
+- JSON formatting functions allow clients to run SQL and receive the results as JSON
+
+---
 # JSON in the Database
+
+- Almost all databases have BLOB/CLOB support for arbitrary attachments
+- Postgres adds two new types: `json` and `jsonb`
+- Both validate the json is well-formed
+- `json` stores the exact json text - faster to load, slower to parse
+- `jsonb` stores a parsed binary representation - slower to load, faster to search
+- [`pg_jsonschema`](https://github.com/supabase/pg_jsonschema) extension allows a check-constraint to be defined for a column
+- `jsonb` allows indexing, either of the whole document or specific attributes
+- [`jsonpath`](https://github.com/obartunov/sqljsondoc/blob/master/jsonpath.md) syntax allows querying documents inside SQL statements
+
+---
+# JSON from the database
+
+- In addition to retreiving json data you've stored, [json functions](https://www.postgresql.org/docs/current/functions-json.html) can create documents from traditional relational data
+  - `row_to_json()`
+  - `json_agg()`
+  - `json_object_agg()`
+
+---
+# An intro to the query optimizer
