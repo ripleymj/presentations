@@ -18,12 +18,13 @@ marp: true
 ---
 # Where we are today
 
-- Relational databases own the market
+- Relational databases won over their predecessors
 - Object oriented have larged faded
-- NoSQL databases are an area of major investment
-  - Simplified prototyping
-  - Relaxed reliability constraints
-  - Matured significantly lately
+- NoSQL/document databases are becoming popular
+  - Simplified prototyping, relaxed reliability constraints
+- Graph databases (storing nodes, edges, properties) an area of research and investment
+- Vector databases rising within the AI world
+- Hybrid databases combining technologies
 
 ---
 # Four essential acronyms - (R)DBMS
@@ -67,7 +68,7 @@ The ability of the DBMS to recover the committed transaction updates against any
 The four essential SQL operations
 
 - Create
-- Retrieve
+- Retrieve (select)
 - Update
 - Delete
 
@@ -166,3 +167,11 @@ AND l.country_id = c.country_id
 
 ORDER BY country_name, state_province;
 ```
+
+---
+# Analytic functions
+
+[oracle-base](https://oracle-base.com/articles/misc/analytic-functions)
+
+---
+# JSON in the Database
