@@ -1,7 +1,7 @@
 ---
 marp: true
 ---
-# Intro to Linux
+# About Linux
 
 Mike Ripley
 
