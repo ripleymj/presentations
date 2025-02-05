@@ -1,16 +1,25 @@
 ---
 marp: true
 ---
-# About Linux
+# Welcome and Introduction
 
 Mike Ripley
+
+---
+# About the UUG team
+
+- Ray - president
+- Connor - VP
+- Mitch - secretary
+- Jackson - treasurer
+- Dr. Lam / Mike Ripley - advisors
 
 ---
 # About the UUG
 
 - Meetings Wednesdays at 6:30 in King 236, casual Festival dinner around 5:30
 - Find us on Discord: <https://discord.gg/CJSZ2Pqs>
-- Listserv for meeting announcements
+- Listserv & Discord for meeting announcements
 - GitHub org: <https://github.com/jmunixusers>
 - Other fun: <https://www.jmunixusers.org>
 
