@@ -22,6 +22,18 @@ Mike Ripley
 - Listserv & Discord for meeting announcements
 - GitHub org: <https://github.com/jmunixusers>
 - Other fun: <https://www.jmunixusers.org>
+- Trace our history to 1997, our alumni are often at JMU career fairs
+
+---
+# About UUG themes
+
+- Linux
+- Open-source projects
+- Homelabs
+- Cloud compute
+- Programming languages
+- Git / GitHub / GitLab
+- Lightning talks / member interests
 
 ---
 # About "Linux"
