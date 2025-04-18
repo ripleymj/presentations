@@ -6,7 +6,6 @@ on:
       - main
 jobs:
   Build:
-    if: github.repository == 'jmunixusers/presentations'
     name: Build PDF release bundle
     runs-on: ubuntu-latest
     steps:
@@ -18,9 +17,9 @@ jobs:
           node-version: "20"
       - name: Install Ubuntu dependencies
         run: |
-          sudo snap install chromium
+          npx @puppeteer/browsers install chrome-headless-shell@stable
           sudo apt-get -q update
-          sudo apt-get -qq -y install pandoc texlive-xetex librsvg2-bin
+          sudo apt-get -qq -y --no-install-recommends install pandoc texlive-xetex lmodern librsvg2-bin texlive-fonts-recommended texlive-plain-generic
       - uses: actions/cache@v4
         with:
           path: ~/.npm
