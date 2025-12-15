@@ -6,7 +6,6 @@ on:
       - main
 jobs:
   Build:
-    if: github.repository == 'jmunixusers/presentations'
     name: Build PDF release bundle
     runs-on: ubuntu-latest
     steps:
