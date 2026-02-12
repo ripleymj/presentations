@@ -169,9 +169,9 @@ zpool status
 ## Creating a Dataset
 
 ```sh
-sudo zpool create tank/backups
+sudo zfs create tank/backups
 # optionally, change metadata:
-sudo zpool set compression=zstd tank/backups
+sudo zfs set compression=zstd tank/backups
 zfs list
 ```
 
