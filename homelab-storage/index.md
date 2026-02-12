@@ -151,9 +151,9 @@ li {
 ## Creating a ZPool
 
 ```sh
-$ sudo apt install zfsutils-linux
-$ ls -l /dev/disk/by-id/
-$ sudo zpool create \
+sudo apt install zfsutils-linux
+ls -l /dev/disk/by-id/
+sudo zpool create \
   -o ashift=12 \        # for modern 4KB sector drives. should be 13 for 8K sectors
   -O compression=lz4 \  # or zstd, off, gzip
   -O atime=off \        # performance/drive health
@@ -161,7 +161,7 @@ $ sudo zpool create \
   /dev/disk/by-id/ata-DRIVE1_______ \ # list which drives make up the pool
   /dev/disk/by-id/ata-DRIVE2_______ \
   /dev/disk/by-id/ata-DRIVE3_______
-$ zpool status
+zpool status
 ```
 
 ---
@@ -169,10 +169,10 @@ $ zpool status
 ## Creating a Dataset
 
 ```sh
-$ sudo zpool create tank/backups
-$ # optionally, change metadata:
-$ sudo zpool set compression=zstd tank/backups
-$ zfs list
+sudo zpool create tank/backups
+# optionally, change metadata:
+sudo zpool set compression=zstd tank/backups
+zfs list
 ```
 
 ---
