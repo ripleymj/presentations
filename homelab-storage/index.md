@@ -36,7 +36,7 @@ footer: Slides written by Connor Sample - https://tabulate.tech
 ## Hardware
 
 - **CMR (Conventional Magnetic Recording)**: tracks are next to each other (this is what you need to use)
-- **SMR (Shingled Magnetic Recording)**: tracks are "singled" and they overlap
+- **SMR (Shingled Magnetic Recording)**: tracks are "shingled" and they overlap
   - Higher density and cheaper, but struggle during long sustained data writes (like resilvering)
 
 ---
