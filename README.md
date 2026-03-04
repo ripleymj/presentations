@@ -30,6 +30,7 @@ For slides rendered to PDF or presentation notes for offline reading, download t
 - [Let's Encrypt](LetsEncrypt.md)
 - [Manpages](Manpages.md)
 - [Media servers](media-server/index.md)
+- [Meshtastic](meshtastic/index.md)
 - Networking - [Intro](networking/index.md), [Lab](networking/lab.md)
 - [Navigating Linux](navigating_linux/index.md)
 - [NextCloud on AWS](NextCloudAWS.md)
