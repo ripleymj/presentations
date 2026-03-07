@@ -36,7 +36,7 @@ jobs:
             output="${input%.md}.pdf"
             echo "Input: $input, output $output"
             if [[ "$(grep -l 'marp: true' "$input")" ]]; then
-              npx marp --allow-local-files "$input" -o "$output"
+              npx marp --pdf-outlines --allow-local-files "$input" -o "$output"
             else
               directory=$(dirname "$input")
               pandoc --pdf-engine=xelatex -f markdown-implicit_figures --resource-path .:"$directory" -o "$output" "$input"
