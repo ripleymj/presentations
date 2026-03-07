@@ -54,7 +54,7 @@ For slides rendered to PDF or presentation notes for offline reading, download t
 - [Starlink](starlink/index.md)
 - [Systemd Security](Systemd-security.md)
 - [TLS](TLS.md)
-- [zstd](zstd.md)
+- [zstd](zstd/index.md)
 
 ## Virtual Machine
 

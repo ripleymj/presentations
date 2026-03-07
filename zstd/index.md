@@ -43,18 +43,18 @@ The bestest compression ever
 
 ---
 # Some benchmarks
-![](zstd/benchmark1.png)
+![zstd benchmark diagram](zstd/benchmark1.png)
 
 <https://engineering.fb.com/2016/08/31/core-data/smaller-and-faster-data-compression-with-zstandard/>
 
 ---
 # More benchmark
-![](zstd/benchmark2.png)
+![zstd benchmark diagram](zstd/benchmark2.png)
 
 <https://engineering.fb.com/2016/08/31/core-data/smaller-and-faster-data-compression-with-zstandard/>
 
 ---
 # One more for good luck
-![](zstd/benchmark3.png)
+![zstd benchmark diagram](zstd/benchmark3.png)
 
 <http://facebook.github.io/zstd/>

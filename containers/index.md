@@ -69,7 +69,7 @@ We'll get to that later
   - WSL2 is now virtualized
 
 ---
-![](image4.png)
+![LWN article 780364 screenshot](image4.png)
 
 [https://lwn.net/Articles/780364/](https://lwn.net/Articles/780364/)
 

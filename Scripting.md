@@ -94,8 +94,7 @@ The `[ ... ]` command is an alias for `test` (`/bin/test`) and returns either 0
 `[[ ... ]]` is a superset of the `test` functionality, with a few added
 functions, though this functionality is not POSIX standard and therefore varies
 based on the system. I will be working based on `bash`'s implementation of `[[`
-(found
-[here](https://www.gnu.org/software/bash/manual/html_node/Conditional-Constructs.html#index-_005b_005b)).
+([documented here](https://www.gnu.org/software/bash/manual/html_node/Conditional-Constructs.html#index-_005b_005b)).
 But your results may vary if using something else.
 
 Some useful operators are:

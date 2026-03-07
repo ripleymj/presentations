@@ -16,7 +16,7 @@ Mitch Feigenbaum - <https://mitchf.me>
 
 ---
 
-![](woods.jpg)
+![Cabin woods view photo](woods.jpg)
 
 ---
 
@@ -45,11 +45,11 @@ Mitch Feigenbaum - <https://mitchf.me>
 
 ---
 
-![bg contain](starlink_eth.jpg)
+![bg contain Starlink architecture diagram](starlink_eth.jpg)
 
 ---
 
-![](eero.jpg)
+![Eero device photo](eero.jpg)
 
 ---
 

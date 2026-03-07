@@ -93,7 +93,7 @@ marp: true
 
 # VM Skeleton - too many buttons to get right
 
-![](image01.png)
+![VirtualBox VM configuration screenshot](image01.png)
 
 ---
 
@@ -346,4 +346,4 @@ jgrasp:
 
 # Contributing to the project
 
-![](image08.png)
+![GitHub project page screenshot](image08.png)
