@@ -367,8 +367,8 @@ borg compact
 
 <div class="right-col">
 
-![](vorta.png)
-![](pika.png)
+![Vorta screenshot](vorta.png)
+![Pika screenshot](pika.png)
 
 </div>
 

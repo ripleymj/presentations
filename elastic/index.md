@@ -16,17 +16,17 @@ What is Elastic?
 
 # Along came Beats to the ELK family, giving us the ELK-B(ee)
 
-![](image02.png)
+![Elastic ELK-B mascot logo](image02.png)
 
 ---
 
 # Elastic Universe circa 2018
 
-![](image03.png)
+![ElasticStack architecture diagram](image03.png)
 
 ---
 
-![bg](image04.png)
+![ElasticStack architecture and deployment diagram](image04.png)
 
 ---
 
