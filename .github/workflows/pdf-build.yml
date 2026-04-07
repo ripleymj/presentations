@@ -20,7 +20,7 @@ jobs:
         run: |
           sudo snap install chromium
           sudo apt-get -q update
-          sudo apt-get -qq -y install pandoc texlive-xetex librsvg2-bin
+          sudo apt-get -qq -y install ghostscript pandoc texlive-xetex librsvg2-bin
       - uses: actions/cache@v5
         with:
           path: ~/.npm
@@ -33,15 +33,16 @@ jobs:
       - name: Build PDFs
         run: |
           for input in *.md */*.md; do
-            output="${input%.md}.pdf"
+            output="${input%.md}"
             echo "Input: $input, output $output"
             if [[ "$(grep -l 'marp: true' "$input")" ]]; then
-              npx marp --pdf-outlines --allow-local-files "$input" -o "$output"
+              npx marp --pdf-outlines --allow-local-files "$input" -o "${output}-gs.pdf"
+              ghostscript -sDEVICE=pdfwrite -dPDFSETTINGS=/ebook -dNOPAUSE -dQUIET -dBATCH -sOutputFile=${output}.pdf ${output}-gs.pdf
             else
               directory=$(dirname "$input")
-              pandoc --pdf-engine=xelatex -f markdown-implicit_figures --resource-path .:"$directory" -o "$output" "$input"
+              pandoc --pdf-engine=xelatex -f markdown-implicit_figures --resource-path .:"$directory" -o "${output}.pdf" "$input"
             fi
-            zip -g PDF.zip "$output"
+            zip -g PDF.zip "${output}.pdf"
           done
       - name: Create updated release
         run: |
