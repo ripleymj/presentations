@@ -40,7 +40,8 @@ jobs:
               ghostscript -sDEVICE=pdfwrite -dPDFSETTINGS=/ebook -dNOPAUSE -dQUIET -dBATCH -sOutputFile=${output}.pdf ${output}-gs.pdf
             else
               directory=$(dirname "$input")
-              pandoc --pdf-engine=xelatex -f markdown-implicit_figures --resource-path .:"$directory" -o "${output}.pdf" "$input"
+              pandoc --pdf-engine=xelatex -f markdown-implicit_figures --resource-path .:"$directory" -o "${output}-gs.pdf" "$input"
+              ghostscript -sDEVICE=pdfwrite -dPDFSETTINGS=/ebook -dNOPAUSE -dQUIET -dBATCH -sOutputFile=${output}.pdf ${output}-gs.pdf
             fi
             zip -g PDF.zip "${output}.pdf"
           done
