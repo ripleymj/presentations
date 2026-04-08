@@ -32,6 +32,9 @@ jobs:
           npm install --save-dev @marp-team/marp-cli
       - name: Build PDFs
         run: |
+          for input in *.pdf */*.pdf; do
+            zip -g PDF.zip "${input}"
+          done
           for input in *.md */*.md; do
             output="${input%.md}"
             echo "Input: $input, output $output"
