@@ -32,7 +32,7 @@ For slides rendered to PDF or presentation notes for offline reading, download t
 - [Media servers](media-server/index.md)
 - [Meshtastic](meshtastic/index.md)
 - [Monad: A Monoid in the Class of Endofunctors](Monads.pdf)
-- Networking - [Intro](networking/index.md), [Lab](networking/lab.md)
+- Networking - [Intro](networking/index.md), [Lab](networking/lab.md), [Lab 2026](networking/Lab2026.pdf)
 - [Navigating Linux](navigating_linux/index.md)
 - [NextCloud on AWS](NextCloudAWS.md)
 - [Regex](regex/index.md)
